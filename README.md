@@ -1,11 +1,12 @@
 # BackEnd-Testing-Example
 POC testing to measure knowledge in Cucumber, HTTParty and Ruby
 
+Important: All BDD scenario are in Brazilian Portuguese
 
 # Installation / Requirements
 
 Ruby
-https://www.ruby-lang.org/pt/
+https://www.ruby-lang.org/
 
 Cucumber
 https://cucumber.io/
