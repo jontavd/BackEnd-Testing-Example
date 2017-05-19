@@ -16,11 +16,11 @@ https://github.com/jnunemaker/httparty
 
 Useful commands after installation in the terminal / command prompt:
 
-gem install
 - install the gem mechanism to donwload packages
+gem install
 
-gem bundle (in the root foolder)
 - download all the packages necessary for this example work
+gem bundle (rum in the root foolder)
 
-cucumber (in the root folder)
 - start the test execution
+cucumber (in the root folder)
