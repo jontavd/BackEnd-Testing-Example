@@ -27,6 +27,7 @@ gem install
 gem bundle (rum in the root foolder)
 
 
-- start the test execution:
+** IMPORTANT - Test Execution:
 
-cucumber (in the root folder)
+(in the project's root folder)
+cucumber
