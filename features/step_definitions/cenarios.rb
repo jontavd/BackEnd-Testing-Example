@@ -13,7 +13,7 @@ Entao(/^recebo a lista completa$/) do
 end
 
 Quando(/^eu informar o (\d+) do post$/) do |id|
-  @last_response = HTTParty.get($url + id)
+  @last_response = HTTParty.get($url + id.to_s)
 end
 
 Entao(/^recebo o usuario, titulo e a descricao$/) do
@@ -35,7 +35,7 @@ Entao(/^confirmo a criacao de um novo post$/) do
 end
 
 Quando(/^eu passar um (\d+) de um post para deletar$/) do |id|
-  @last_response = HTTParty.delete($url + id)
+  @last_response = HTTParty.delete($url + id.to_s)
 end
 
 Entao(/^confirmo que o post foi deletado$/) do
@@ -47,7 +47,7 @@ Entao(/^confirmo que o post foi deletado$/) do
 end
 
 Quando(/^eu escolher um (\d+) de um post para alterar$/) do |id|
-  @last_response = HTTParty.put($url + id)
+  @last_response = HTTParty.put($url + id.to_s)
 end
 
 Entao(/^altero o titulo do post para 'atualizado'$/) do
