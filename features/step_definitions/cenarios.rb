@@ -1,14 +1,12 @@
 # encoding: utf-8
 
-$url = 'http://jsonplaceholder.typicode.com/posts/'
-
 Quando(/^eu solicitar a lista de posts$/) do
   @last_response = HTTParty.get($url)
 end
 
 Entao(/^recebo a lista completa$/) do
-    @last_response.each do |post|
-    	puts 'id: ' + post['id'].to_s + ' id do usuario: ' + post['userId'].to_s
+  @last_response.each do |post|
+    puts "id: #{post['id'].to_s} id do usuario: #{post['userId'].to_s}"
 	end
 end
 
@@ -17,11 +15,11 @@ Quando(/^eu informar o (\d+) do post$/) do |id|
 end
 
 Entao(/^recebo o usuario, titulo e a descricao$/) do
-   if @last_response.not_found? then
+  if @last_response.not_found? then
   	puts 'Post inexistente - 404 ERROR'
   else
-  	puts 'Titulo: ' + @last_response['title'].to_s
-    puts ' Descricao: ' + @last_response['body'].to_s
+  	puts "Titulo: #{@last_response['title'].to_s}"
+    puts "Descricao: #{@last_response['body'].to_s}"
   end
 end
 
