@@ -1,3 +1,4 @@
 require 'httparty'
+require_relative 'modules'
 
-$url = 'http://jsonplaceholder.typicode.com/posts/'
+Url.main = 'http://jsonplaceholder.typicode.com/posts/'

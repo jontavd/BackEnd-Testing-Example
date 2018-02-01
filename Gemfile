@@ -1,3 +1,4 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 gem 'cucumber'
 gem 'httparty'
+gem 'rubocop'
